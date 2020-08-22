@@ -9,13 +9,12 @@ mydb=mysql.connector.connect(
     database="mydatabase"
 )
 mycursor=mydb.cursor()
+
 #window work start...
 window=Tk()
 window.title("myform")
 window.geometry("500x500+100+100")
-#window.iconbitmap('img.ico')
 
-#window.iconphoto(False, tk.PhotoImage(file='pic.png'))
 lable1=Label(window,text="name")
 lable1.place(x=10,y=10)
 entry1=Entry(window,width=10,bd=5)
